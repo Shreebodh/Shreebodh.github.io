@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>B's Art Gallery</title>
+<title>The Blue Diamond</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Art gallery">
-  <meta name="keywords" content="Manadala art, free style art">
-  <meta name="author" content="Binisha Kandel">
-
-<link rel="stylesheet" href="styles.css">
 <style>
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-h1{
-  color: white;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* style the link in the body*/
+.Announcementbar {
+  background-color: #99ccff;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+/* Style the top navigation bar */
+.topnav {
   overflow: hidden;
-  background-color: black;
+  background-color: #004d99;
+}
+
+/* Style the navigation links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+  overflow: hidden;
+  background-color: #99ccff;
   text-align: center;
   margin-top: 10px;
 }
 /* change style of footer on hover */
-h1 a:hover {
-  background-color: #pink;
-  color: White;
+.footer a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 /* change style of footer */
-h1 a {
+.footer a {
   display: block;
   color: #f2f2f2;
   padding: 10px 10px;
@@ -35,133 +72,135 @@ h1 a {
   text-align: center;
   text-decoration: none;
 }
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
+/* change style of footer navigation */
+.botnav {
+  margin-left: 40vw;
+  margin-right: 40vw;
 }
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+/* style the heading text to be responsive*/
+.centered {
+  position: absolute;
+  top: 20vw;
+  left: 30vw;
 }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-  }
-
-    .bodytop {
+/* style the first content in body text to be responsive*/
+.top {
   float: left;
   width: 33%;
-  padding: 5px;
+  text-align: center;
+}
+/* style the link in the body*/
+.top a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+/* style the second content in the body*/
+.middle {
+  background-color: #e5e5e5;
+  float: left;
+  width: 33%;
+  padding: 15px;
+  margin-right: 4px;
+  margin-left: 4px;
+  padding: 0 20px;
+  text-align: center;
+}
+/* style the second link in the body*/
+.middle a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
 }
 
-/* Clearfix (clear floats) */
-.images::after {
-  content: "";
-  clear: both;
-  display: table;
+/* style the third content in the body*/
+.bottom {
+  background-color: #e5e5e5;
+  float: right;
+  width: 33%;
+  padding: 0 20px;
+  text-align: center;
 }
-  /* Responsive layout - makes the three images stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .bodytop {
+
+/* style the link of third content in the body*/
+.bottom a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+/* style the body to be responsive*/
+@media only screen and (max-width: 780px) {
+  /* For mobile phones: */
+  .top, .middle, .bottom {
     width: 100%;
   }
+  h1{
+    font-size: 3.5vw;
+    color: #2f90eb;
   }
+}
 
-
-
-
-img:hover {
-  transform: scaleX(-1);
-}
-blockquote {
-  margin-left: 0;
-  text-align: center;
-  font-size: 20px;
-}
-em { 
-  font-style: italic;
-}
-h3{
-  font-style: italic;
-}
-strong{
-  font-weight:bold;
-}
 </style>
 </head>
-
-<body >
-<div class="topic">
-  <p>B's Art Gallery</p>
+<div class="Announcementbar">
+  <marquee>
+<p>All the new announcements comes here!!!!!</p>  
+</marquee>
 </div>
-
-<div class="navigation">
+<p class="centered" style="color:#ffffff;font-size:3vw;">The Blue Diamond</p>
+<!-- This is the main image of the page -->
+<img src="HeaderImg.webp" alt="Sydeny City" width="100%" height="Auto">
+<!-- This is a navigation button -->
+<div class="topnav">
   <a href="index.html">Home</a>
-  <a href="About.html"> About Me</a>
-  <a href="Privacy.html">Privacy Policy</a>
-  <a href="TermsOfUse.html">Terms of Use</a>
+  <a href="AboutUs.html">About Us</a>
+  <a href="Strata.html">Strata</a>
+  <a href="Bylaws.html">Bylaws</a>
+  <a href="Covid-19.html">Covid-19</a>
   <a href="Contact.html">Contact Us</a>
+  <div class="botmav">
+  </div>
   
 </div>
-<DIV class="images">
-  <div class="bodytop">
-  <img src="mainimage.jpeg" height="320px" width="100%">
-</div>
-  <div class="bodytop">
-  <img src="butterfly.jpeg" height="320px" width="100%">
-</div>
-  <div class="bodytop">
-  <img src="thumpsup.jpeg" height="320px" width="100%">
+<body>
+   <h1 style="text-align: center;" >Home Page</h1>
+
+<div style="overflow:auto">
+  <div class="top">
+   <a href="https://www.northsydney.nsw.gov.au/Community_Services/Other_Services/Community_Grants/ClubGRANTS"><img src="body1.webp" alt="Img1" style="width:400px;height:220px;">
+    <p>Club Grants Apply now</p></a>
   </div>
-  </DIV>
 
-  <div class="row">
-  <div class="column">
-<a href="digitalart.html">
-
-  <h1> Digital Art</h1>
-</a>
-<a href="digitalart.html">
-    <img src="digitalart.jpeg" class="w3-border" alt="digital art" style="padding:4px;width:100%">
-</a>
+  <div class="middle">
+    <a href="https://yoursay.northsydney.nsw.gov.au/2021-liveability-census"><img src="body2.webp" alt="Img1" style="width:400px;height:220px;">
+    <p>Items in Car Spaces</p></a>
   </div>
-  <div class="column">
-<a href="freestyle.html">
-  <h1>Free Style</h1>
-</a>
-<a href="freestyle.html">
-    <img src="freestyle.jpeg" alt="Free style" style="width:100%">
-</a>
-	</div>
+
+  <div class="bottom">
+    <a href="https://yoursay.northsydney.nsw.gov.au/2021-liveability-census"><img src="body3.webp" alt="Img1" style="width:400px;height:220px;">
+    <p>Have your Say!</p></a>
+  </div>
 </div>
-</br>
-
-  <h3>May your Life be full of color.</h3>
-
-<blockquote cite="https://www.artistlane.com.au/artist/julie-ahmad/">
- <em> "I paint in an intuitive style, not always having the final outcome in mind from the start. It’s a journey and practice in patience and trust, 
-   getting there and discovering where the canvas will lead me, is often full of surprises. Living almost a decade in New York City, working in the fashion industry,
-    texture and color are second nature to me, the cross over to fine art was natural. The city is where my taste and style was molded,
-     I love bringing that cosmopolitan energy into my work and sharing it with the world" <strong>-Julie Ahmad</strong></em>
- </blockquote>
-  <div class="footer">
-  <p>@ B's Art Gallery</p>
-  <p>Bini's Artwork</p>
+<div class="footer">
+  <p>©2021 The Blue Diamond</p>
+  <p>Owners Corporation SP74302</p>
   <p>All right reserved</p>
-  <p>Web publishing Assignment</p>
+  <p>Group Project</p>
   <div class="botnav">
+    <!-- This is footer navigation button -->
    <a href="Termsofuse.html">Terms of Use</a> 
-  <a href="Privacy.html">Privacy Policy</a>
+  <a href="Privacypolicy.html">Privacy Policy</a>
   </div>
+</div>
 
 </body>
-
 </html>
